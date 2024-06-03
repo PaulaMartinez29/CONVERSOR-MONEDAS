@@ -71,7 +71,7 @@ class Main {
 
                     Gson gsonObject = new Gson();
 
-                    DatosConversion1 ConversionData = gsonObject.fromJson(response.body().toString(),DatosConversion1.class);
+                    DatosConversion1  ConversionData = gsonObject.fromJson(response.body().toString(),DatosConversion1.class);
                     System.out.println ("El resultado de la conversión es: " + ConversionData.getConversion_result());
                 } catch (Exception e) {
                     throw new RuntimeException("No se puede convertir");
